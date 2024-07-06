@@ -1,26 +1,21 @@
 # simu_server_docker
-## ビルド時
 ```
 .
 ├── Dockerfile
-└── data
-    ├── font(directory)
-    └── text(directory)
-```
-```
-$ docker build -t simu-server .
-```
-## サーバー実行時
-```
-.
 ├── docker-compose.yml
+├── data
+│   ├── font
+│   └── text
 └── simutrans
-    ├── config(directory)
-    ├── pak(directory)
+    ├── config
+    ├── pak
     ├── server13353-network.sve
     └── server13353-pwdhash.sve
 ```
 ```
 $ docker-compose up -d
 ```
+## やりたいこと
+nettoolでいい感じに定期バックアップする。
+お行儀が悪そうなところをよくする。
 

@@ -1,7 +1,8 @@
 version: "3"
 services:
-  simu:
-    image: simu-server:latest
+  simu-server:
+    build: .
+    image: simu-server/server
     ports:
       - "13353:13353"
     volumes:
