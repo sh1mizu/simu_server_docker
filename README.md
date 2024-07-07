@@ -3,12 +3,11 @@
 .
 ├── Dockerfile
 ├── docker-compose.yml
-├── data
-│   ├── font
-│   └── text
 └── simutrans
     ├── config
+    ├── font
     ├── pak
+    ├── text
     ├── server13353-network.sve
     └── server13353-pwdhash.sve
 ```

@@ -3,10 +3,9 @@ services:
   simu-server:
     build: .
     image: simu-server/server
+    environment:
+      - SERVER_ADMIN_PW=password
     ports:
       - "13353:13353"
     volumes:
-      - ./simutrans/pak:/simutrans/pak:Z
-      - ./simutrans/config:/simutrans/config:Z
-      - ./simutrans/server13353-network.sve:/simutrans/server13353-network.sve:Z
-      - ./simutrans/server13353-pwdhash.sve:/simutrans/server13353-pwdhash.sve:Z
+      - ./simutrans:/simutrans:Z
