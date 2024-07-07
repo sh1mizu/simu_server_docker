@@ -4,7 +4,7 @@ services:
     build: .
     image: simu-server/server
     environment:
-      - SERVER_ADMIN_PW=password
+      - SERVER_ADMIN_PW=${SERVER_ADMIN_PW}
     ports:
       - "13353:13353"
     volumes:
