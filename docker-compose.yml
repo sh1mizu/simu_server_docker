@@ -9,3 +9,8 @@ services:
       - "13353:13353"
     volumes:
       - ./simutrans:/simutrans:Z
+  autosave:
+    build: ./autosave
+    image: simu-server/autosave
+    environment:
+      - SERVER_ADMIN_PW=${SERVER_ADMIN_PW}
