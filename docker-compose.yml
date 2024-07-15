@@ -14,3 +14,4 @@ services:
     image: simu-server/autosave
     environment:
       - SERVER_ADMIN_PW=${SERVER_ADMIN_PW}
+      - SERVER_ADDRESS=${SERVER_ADDRESS}

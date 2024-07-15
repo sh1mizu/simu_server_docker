@@ -19,6 +19,8 @@
 .env
 ```
 SERVER_ADMIN_PW=mypassword
+#docker-composeでそのまま使うならsimu-server
+SERVER_ADDRESS=simu-server
 ```
 ### 立ち上げ
 ```
