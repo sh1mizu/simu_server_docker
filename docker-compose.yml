@@ -1,0 +1,17 @@
+services:
+  server:
+    image: simu-server/server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - SERVER_ADMIN_PW=${SERVER_ADMIN_PW}
+      - SIMU_LANG=ja
+    ports:
+      - "13353:13353"
+    volumes:
+      - ./simutrans:/simutrans:Z
+  autosave:
+    image: simu-server/autosave
+    environment:
+      - SERVER_ADMIN_PW=${SERVER_ADMIN_PW}
+      - SERVER_ADDRESS=server
