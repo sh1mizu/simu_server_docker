@@ -1,6 +1,6 @@
 FROM alpine:3.20.1 as builder
 RUN apk add git
-RUN git clone -b v40_1_1 https://github.com/teamhimeh/simutrans.git
+RUN git clone -b v42_0_1 https://github.com/teamhimeh/simutrans.git
 WORKDIR /simutrans
 RUN apk add build-base autoconf
 RUN apk add zlib-dev bzip2-dev libpng-dev
